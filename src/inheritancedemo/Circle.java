@@ -55,4 +55,8 @@ public class Circle extends GeometricObject {
                 );
     }
     
+    @Override
+    public String toString(){
+        return "From CircleClass";
+    }
 }

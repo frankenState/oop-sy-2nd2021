@@ -9,7 +9,11 @@ package inheritancedemo;
  *
  * @author frank lou
  */
-public class Rectangle extends GeometricObject {
+
+// abstract class / class - extends
+
+// interface - implements
+public class Rectangle extends GeometricObject implements Animate, CollisionDetect {
     private double width;
     private double height;
     
@@ -44,6 +48,27 @@ public class Rectangle extends GeometricObject {
     
     public double getPerimeter(){
         return (this.height * 2) + (this.width * 2);
+    }
+    
+    @Override
+    public String toString(){
+        return "From the RectangleClass";
+    }
+
+    @Override
+    public void changeX() {
+        System.out.println("changing the X");
+    }
+
+    @Override
+    public void changeY() {
+        System.out.println("changing the Y");
+     
+    }
+
+    @Override
+    public boolean isCollided() {
+        return true;
     }
     
 }

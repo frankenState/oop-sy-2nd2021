@@ -9,16 +9,18 @@ import java.util.Date;
  *
  * @author frank lou
  */
-public class GeometricObject {
+public abstract class GeometricObject {
     private String color;
     private boolean filled;
     private Date dateCreated;
     
-    public GeometricObject(){
+    
+    
+    protected GeometricObject(){
         this("", false);
     }
     
-    public GeometricObject(String color, boolean filled){
+    protected GeometricObject(String color, boolean filled){
         this.dateCreated = new Date();
         this.color = color;
         this.filled = filled;
@@ -31,6 +33,9 @@ public class GeometricObject {
         return color;
     }
 
+    public String getColor(boolean hex){
+        return !hex ? this.getColor() : "#fc3030";
+    }
     /**
      * @param color the color to set
      */
@@ -59,5 +64,6 @@ public class GeometricObject {
         return dateCreated;
     }
     
+    public abstract String toString();
     
 }
