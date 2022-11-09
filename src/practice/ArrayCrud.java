@@ -15,7 +15,7 @@ public class ArrayCrud {
         Scanner s = new Scanner(System.in);
         String[][] data = new String[10][5];
         /*
-            Columns => ID, Name, Email, Program, Year
+            Columns => ID, First Name, Last Name, Email, Program
         */
        
         //initialize empty string value
