@@ -61,9 +61,15 @@ public class ArrayCrud {
                 case 'R':
                 case 'r':
                     System.out.printf("%43s\n", "--- Read ---");
-                    for (int i = 0; i < data.length; i++)
+                    for (int i = 0; i < data.length; i++){
+                        
+                        if (data[i][0].length() == 0) continue;
+                        
                         System.out.printf("%-10s %-20s %-15s %-10s %-20s\n", data[i][0], data[i][1], data[i][2], data[i][3], data[i][4]);
-                break;
+                        
+                    }
+                        
+                           break;
                 case 'U':
                 case 'u':
                     System.out.print("Enter the ID :");
