@@ -14,20 +14,20 @@ public class GeometricObjectTest {
     public static void main(String[] args) {
         
          GeometricObject go2 = new Circle(5);
-         // type-casting
-         Circle c2 = (Circle)go2;
-         System.out.println("Radius: " + c2.getRadius());
-         // object vs class
-         // - class - 
-         // - object - 
-         
-         
+//         // type-casting
+//         Circle c2 = (Circle)go2;
+//         System.out.println("Radius: " + c2.getRadius());
+//         // object vs class
+//         // - class - 
+//         // - object - 
+//         
+//         
          GeometricObject go3 = new Rectangle();
          
          
          
         
-        
+//        
 //        GeometricObject go1 = new GeometricObject();
 //        go1.setColor("grey");
 //        go1.setFilled(false);
